@@ -23,14 +23,11 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             ComposedTheme {
-                Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                }
+                Scaffold(modifier = Modifier.fillMaxSize()) {}
             }
         }
     }
 }
-
-
 
 @Preview(showBackground = true)
 @Composable
