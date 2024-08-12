@@ -22,22 +22,7 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContent {
-            ComposedTheme {
-                Scaffold(modifier = Modifier.fillMaxSize()) {}
-            }
+
         }
     }
-}
-
-@Preview(showBackground = true)
-@Composable
-fun EditTextPreview() {
-    val state = remember {
-        mutableStateOf("")
-    }
-    TextField(value = state.value, onValueChange = { state.value = it })
-}
-
-fun print(p : String){
-    Log.e("PRINT", p)
 }
